@@ -1,0 +1,13 @@
+.nav {
+  grid-area: n;
+  background-color: burlywood;
+}
+
+a {
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.item {
+  font-weight: 700;
+}
