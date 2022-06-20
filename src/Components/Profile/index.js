@@ -1,23 +1,15 @@
 import React from "react";
+import MyPosts from "./MyPosts";
 import styles from './Profile.module.css';
 
-const Profile = () => {
+const Profile = (props) => {
   return (
-    <div className={styles.content}>
-      <img src={require('../../profilePhoto.png')} />
+    <div>
+      <img src={'./img/profilePhoto.png'} />
       <div className={styles.item}>
         ava + description
       </div>
-      <div className={styles.item}>
-        My posts
-        <div className={styles.item}>
-          New post
-        </div>
-        <div>
-          <div className={styles.item}>Post 1</div>
-          <div className={styles.item}>Post 2</div>
-        </div>
-      </div>
+      <MyPosts message="fileName"/>
     </div>
   );
 }

@@ -5,9 +5,11 @@
 
 a {
   text-decoration: none;
-  margin-left: 10px;
+  margin-left: 11px;
+  color: inherit;
 }
 
 .item {
   font-weight: 700;
+  color: red;
 }
