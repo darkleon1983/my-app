@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 import styles from './App.css';
 import Dialogs from './Components/Dialogs';
 import Header from './Components/Header/index.js';
@@ -12,11 +13,14 @@ function App() {
     <div className='app-wrapper'>
       <Header />
       <Nav />
-      {/* <Profile /> */}
       <div class='app-wrapper-content'>
-        <Dialogs />
+        <Routes>
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/dialogs" element={<Dialogs />} />
+        </Routes>
       </div>
-    </div>);
+    </div>
+  );
 }
 
 export default App;
