@@ -9,7 +9,7 @@ const Profile = (props) => {
       <div className={styles.item}>
         ava + description
       </div>
-      <MyPosts message="fileName"/>
+      <MyPosts message="get the fuck out of here"/>
     </div>
   );
 }

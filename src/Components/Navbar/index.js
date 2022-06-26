@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Profile from "../Profile";
 import Dialogs from './../Dialogs/index';
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav className={styles.nav}>
       <div className={styles.item}>
